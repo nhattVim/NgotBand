@@ -31,8 +31,7 @@
 
 ## 🌐 Trang web
 
-Đây là phiên bản web giúp người dùng trải nghiệm hành trình âm nhạc với hệ thống mua sắm liền mạch:
-`https://ngotband.fwh.is`
+Đây là phiên bản web giúp người dùng trải nghiệm hành trình âm nhạc với hệ thống mua sắm liền mạch: [ngotband.fwh.is](https://ngotband.fwh.is)
 
 ---
 
