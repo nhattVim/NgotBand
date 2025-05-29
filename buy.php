@@ -28,15 +28,17 @@ $totalPrice = $row['total_price'];
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ngọt - Giỏ hàng</title>
     <link rel="icon" type="image/x-icon" href="./assets/img/favicon/favicon_1.webp">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
-    <link rel="stylesheet" href="./assets/CSS/buy.css">
+    <link rel="stylesheet" href="./assets/css/buy.css">
     <link rel="icon" type="image/x-icon" href="./assets/img/logo/web.png">
 </head>
+
 <body>
     <div class="wrap">
         <header class="header">
@@ -53,7 +55,8 @@ $totalPrice = $row['total_price'];
         <div class="main__content-theme">
             <div class="main__content--heading-page">
                 <h1 class="main__content--heading-title">Giỏ hàng của bạn</h1>
-                <p class="main__content--heading--count-cart">Có <span><?php echo $totalQuantity; ?> sản phẩm</span> trong giỏ hàng</p>
+                <p class="main__content--heading--count-cart">Có <span><?php echo $totalQuantity; ?> sản phẩm</span>
+                    trong giỏ hàng</p>
             </div>
         </div>
 
@@ -69,7 +72,7 @@ $totalPrice = $row['total_price'];
                             </tr>
                         </thead>
                         <tbody>
-                        <?php
+                            <?php
                             if ($result->num_rows > 0) {
                                 while ($row = $result->fetch_assoc()) {
                                     $total = $row["price"] * $row["sl_order"];
@@ -101,7 +104,7 @@ $totalPrice = $row['total_price'];
                     <div class="wrap__box-content--box-ground">
                         <h4>Ghi chú đơn hàng</h4>
                         <div class="wrap__box-content--checkout-note">
-                            <textarea  name="note" id="node" placeholder="Ghi chú"></textarea>
+                            <textarea name="note" id="node" placeholder="Ghi chú"></textarea>
                         </div>
                     </div>
 
@@ -115,7 +118,8 @@ $totalPrice = $row['total_price'];
                     </div>
                     <div class="wrap__box-line--order-total">
                         <p>
-                            Tổng tiền : <span class="tatal-price"><?php echo number_format($totalPrice, 0, ',', '.') ?>.000VND</span>
+                            Tổng tiền : <span
+                                class="tatal-price"><?php echo number_format($totalPrice, 0, ',', '.') ?>.000VND</span>
                         </p>
                     </div>
 
@@ -141,8 +145,8 @@ $totalPrice = $row['total_price'];
             </div>
         </div>
 
-            <footer>
-                <div class="main-footer">
+        <footer>
+            <div class="main-footer">
                 <div class="footer-content">
                     <div class="footer-content-left">
                         <p>
@@ -156,13 +160,17 @@ $totalPrice = $row['total_price'];
                         </p>
                         <div class="logo-footer">
                             <a href="http://online.gov.vn/Home/WebDetails/110866">
-                                <img src="//theme.hstatic.net/200000777655/1001125616/14/logo_bct.png?v=221" alt="footer-logo">
+                                <img src="//theme.hstatic.net/200000777655/1001125616/14/logo_bct.png?v=221"
+                                    alt="footer-logo">
                             </a>
                         </div>
                         <ul class="footer-social">
-                            <li><a href="https://www.facebook.com/bannhacngot"><i class="fa-brands fa-facebook-f"></i></a></li>
-                            <li><a href="https://www.instagram.com/bannhac.ngot"><i class="fa-brands fa-instagram"></i></i></a></li>
-                            <li><a href="https://www.youtube.com/@Ngotband"><i class="fa-brands fa-youtube"></i></i></i></a></li>
+                            <li><a href="https://www.facebook.com/bannhacngot"><i
+                                        class="fa-brands fa-facebook-f"></i></a></li>
+                            <li><a href="https://www.instagram.com/bannhac.ngot"><i
+                                        class="fa-brands fa-instagram"></i></i></a></li>
+                            <li><a href="https://www.youtube.com/@Ngotband"><i
+                                        class="fa-brands fa-youtube"></i></i></i></a></li>
                         </ul>
                     </div>
                     <div class="footer-content-right">
@@ -184,4 +192,5 @@ $totalPrice = $row['total_price'];
         </footer>
     </div>
 </body>
+
 </html>

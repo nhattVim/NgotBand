@@ -21,19 +21,19 @@ body::-webkit-scrollbar {
     display: flex;
     position: relative;
     align-items: center;
-    padding: 15px  75px;
+    padding: 15px 75px;
 
 }
 
 .header__logo {
-   
+
     position: absolute;
     margin: 0;
     top: 50%;
     left: 50%;
-    transform: translate(-50%) translateY(-50%); 
+    transform: translate(-50%) translateY(-50%);
     line-height: 0;
-    
+
 }
 
 .header__logo-photograp {
@@ -50,8 +50,8 @@ body::-webkit-scrollbar {
 
 .header__cart-icon {
     position: relative;
-    font-size: 25px; 
-    margin-right:2px;
+    font-size: 25px;
+    margin-right: 2px;
 
 
 }
@@ -98,7 +98,7 @@ body::-webkit-scrollbar {
     width: 60px;
     height: 4px;
     margin: 25px auto 0;
-    
+
 
 }
 
@@ -148,7 +148,7 @@ body::-webkit-scrollbar {
 .wrap__box-content-table .Item {
     text-align: left;
     position: relative;
-    
+
 }
 
 .wrap__box-content-table .Item h3 a {
@@ -156,8 +156,9 @@ body::-webkit-scrollbar {
     color: #252a2b;
     line-height: 1.1;
     text-decoration: none;
-    
+
 }
+
 .wrap__box-content-table .Item p {
     margin-top: 8px;
 }
@@ -208,13 +209,13 @@ body::-webkit-scrollbar {
 }
 
 .wrap__box-content-table .price {
-    position: absolute ;
+    position: absolute;
     color: #252a2b;
     font-weight: bold;
     margin-top: 5px;
     float: right;
     right: 0;
-    
+
 }
 
 .wrap__box-content-table .variant-title {
@@ -227,7 +228,7 @@ body::-webkit-scrollbar {
     position: absolute;
     color: #252a2b;
     text-decoration: none;
-     font-size: 20px; 
+    font-size: 20px;
     top: 10px;
     right: 10px;
 }
@@ -240,7 +241,7 @@ body::-webkit-scrollbar {
 }
 
 
-.wrap__box-content--checkout-note textarea{
+.wrap__box-content--checkout-note textarea {
     margin-top: 10px;
     border-radius: 0;
     background: #ededed;
@@ -248,7 +249,7 @@ body::-webkit-scrollbar {
     font-size: 15px;
     padding: 20px 15px;
     outline: none;
-    width: 50% ;
+    width: 50%;
     min-height: 130px;
     font-weight: 500;
     border: 1px solid transparent;
@@ -263,7 +264,7 @@ body::-webkit-scrollbar {
 .wrap__sticky {
     flex: 1;
     width: 150px;
-    position:relative;
+    position: relative;
 
 }
 
@@ -282,15 +283,15 @@ body::-webkit-scrollbar {
 }
 
 .wrap__box-line--order-title {
-    margin: 10px 0 ;
+    margin: 10px 0;
     font-size: 20px;
     font-weight: bold;
 
 }
 
 
-.wrap__box-line--order-total  {
-    
+.wrap__box-line--order-total {
+
     font-size: 16px;
     color: #5c5c5c;
     font-weight: 600;
@@ -301,7 +302,7 @@ body::-webkit-scrollbar {
 
 
 .tatal-price {
-    float: right;   
+    float: right;
     color: #000;
     font-size: 24px;
     font-weight: bold;
@@ -315,7 +316,7 @@ body::-webkit-scrollbar {
 
 
 .wrap__box-line--order-action {
-    margin-top: 15px ;
+    margin-top: 15px;
 }
 
 .wrap__box-line--order-btn-checkout {
@@ -362,8 +363,9 @@ body::-webkit-scrollbar {
 }
 
 .buttom:hover {
-    color: #000; 
-    border: 1px solid #e00707;;
+    color: #000;
+    border: 1px solid #e00707;
+    ;
 }
 
 .wrap__box-line--order-continue {
@@ -384,7 +386,7 @@ body::-webkit-scrollbar {
 /* foooter
  */
 
- 
+
 .main-footer {
     margin-top: 50px;
     /* margin-top: 145vh; */
@@ -430,7 +432,7 @@ body::-webkit-scrollbar {
     margin-top: 8px;
     text-align: center;
     border-radius: 4px;
-    -webkit-transition: 0.4s;   
+    -webkit-transition: 0.4s;
     -o-transition: 0.4s;
     transition: 0.4s;
 }
@@ -467,6 +469,3 @@ body::-webkit-scrollbar {
     text-decoration: none;
     color: #000;
 }
-
-
-

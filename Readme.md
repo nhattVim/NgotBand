@@ -61,6 +61,12 @@
             <td><img src="https://github.com/nhattVim/assets/blob/master/NgotBand/5.png?raw=true"/></td>
         </tr>
     </table>
+        <table>
+        <tr>
+            <td><img src="https://github.com/nhattVim/assets/blob/master/NgotBand/6.png?raw=true"/></td>
+            <td><img src="https://github.com/nhattVim/assets/blob/master/NgotBand/7.png?raw=true"/></td>
+        </tr>
+    </table>
 </div>
 
 ---
@@ -73,7 +79,7 @@
 2. **Di chuyển mã nguồn vào thư mục `htdocs`:**
 
     ```bash
-    C:\xampp\htdocs\NgotBand\
+    C:\xampp\htdocs\NgotBand
     ```
 
 3. **Tạo cơ sở dữ liệu:**
@@ -90,4 +96,8 @@
     assets/database/ngot_database.sql
     ```
 
-5. **Chạy dự án trên trình duyệt:**
+5.  **Chạy dự án trên trình duyệt:**
+
+    ```
+    http://localhost/NgotBand/
+    ```
