@@ -37,11 +37,11 @@
 
 ## 👥 Thành viên
 
--   **Huỳnh Ngọc Lâm** – Backend, Cơ sở dữ liệu
--   **Lưu Minh Chí** – Frontend, Thiết kế
--   **Lê Nhật Trường** – Xử lý media, nén video
--   **Trần Thị Ngọc Mai** – Tài liệu, thử nghiệm
--   **Trần Phi Hùng (80)** – Tài liệu, thử nghiệm
+-   **Huỳnh Ngọc Lâm** - (leader)
+-   **Lưu Minh Chí**
+-   **Lê Nhật Trường**
+-   **Trần Thị Ngọc Mai**
+-   **Trần Phi Hùng (80)**
 
 ---
 
