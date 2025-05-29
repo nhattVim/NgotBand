@@ -1,23 +1,94 @@
-# ⚠️ Bản demo tạm thời
+<h1 align="center">NGOTBAND</h1>
 
-Trang web này chỉ là **bản giao diện tạm thời** được hiển thị qua [GitHub Pages](https://pages.github.com/).
+<p align="center"><em>Empower Your Music Journey with Seamless Shopping</em></p>
 
-> ❌ GitHub Pages **không hỗ trợ PHP**, vì vậy các tính năng động (như xử lý form, kết nối cơ sở dữ liệu, đăng nhập, v.v...) sẽ **không hoạt động** ở đây.
+<p align="center">
+  <img src="https://img.shields.io/badge/last%20commit-today-brightgreen" />
+  <img src="https://img.shields.io/badge/php-74.7%25-blue" />
+  <img src="https://img.shields.io/badge/languages-4-lightgrey" />
+</p>
 
-👉 Để xem giao diện: [NgotBand](https://nhattVim.github.io/NgotBand)
+<br />
 
-👉 Nếu bạn muốn xem **bản đầy đủ**, hãy **clone source về** và chạy trên máy cục bộ bằng **XAMPP**, **Laragon**, hoặc bất kỳ server nào hỗ trợ **PHP**.  
-Chạy trên GitHub chỉ là bản giao diện, còn chạy bằng XAMPP mới là bản đầy đủ chức năng.
+<p align="center"><em>Built with the tools and technologies:</em></p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/-Markdown-black?logo=markdown" />
+  <img src="https://img.shields.io/badge/-PHP-777BB4?logo=php&logoColor=white" />
+</p>
 
 ---
 
-# ⚠️ Temporary Demo Version
+# Table of Content
 
-This website is only a **temporary interface demo** hosted via [GitHub Pages](https://pages.github.com/).
+-   [Table of Content](#table-of-content)
+    -   [🌐 Trang web](#-trang-web)
+    -   [👥 Thành viên](#-thành-viên)
+    -   [🖼️ Screenshots](#️-screenshots)
+    -   [💻 Hướng dẫn cài đặt (Local với XAMPP)](#-hướng-dẫn-cài-đặt-local-với-xampp)
 
-> ❌ GitHub Pages **does not support PHP**, so dynamic features (such as form handling, database connection, login, etc.) **will not work** here.
+---
 
-👉 To preview the interface: [NgotBand](https://nhattVim.github.io/NgotBand)
+## 🌐 Trang web
 
-👉 To view the **full version**, please **clone the source code** and run it locally using **XAMPP**, **Laragon**, or any **PHP-compatible server**.  
-Running via GitHub only shows the interface; running with XAMPP will give you the full functionality.
+> Đây là phiên bản web giúp người dùng trải nghiệm hành trình âm nhạc với hệ thống mua sắm liền mạc:
+> `https://ngotband.fwh.is`
+
+---
+
+## 👥 Thành viên
+
+-   **Huỳnh Ngọc Lâm** – Backend, Cơ sở dữ liệu
+-   **Lưu Minh Chí** – Frontend, Thiết kế
+-   **Lê Nhật Trường** – Xử lý media, nén video
+-   **Trần Thị Ngọc Mai** – Tài liệu, thử nghiệm
+-   **Trần Phi Hùng (80)** – Tài liệu, thử nghiệm
+
+---
+
+## 🖼️ Screenshots
+
+<div align="center">
+    <table>
+        <tr>
+            <td><img src="https://github.com/nhattVim/assets/blob/master/NgotBand/1.png?raw=true"/></td>
+            <td><img src="https://github.com/nhattVim/assets/blob/master/NgotBand/2.png?raw=true"/></td>
+        </tr>
+    </table>
+    <table>
+        <tr>
+            <td><img src="https://github.com/nhattVim/assets/blob/master/NgotBand/3.png?raw=true"/></td>
+            <td><img src="https://github.com/nhattVim/assets/blob/master/NgotBand/4.png?raw=true"/></td>
+            <td><img src="https://github.com/nhattVim/assets/blob/master/NgotBand/5.png?raw=true"/></td>
+        </tr>
+    </table>
+</div>
+
+---
+
+## 💻 Hướng dẫn cài đặt (Local với XAMPP)
+
+1. **Tải XAMPP và cài đặt:**
+   [https://www.apachefriends.org/index.html](https://www.apachefriends.org/index.html)
+
+2. **Di chuyển mã nguồn vào thư mục `htdocs`:**
+
+    ```bash
+    C:\xampp\htdocs\NgotBand\
+    ```
+
+3. **Tạo cơ sở dữ liệu:**
+
+-   Truy cập http://localhost/phpmyadmin
+-   Tạo database mới tên ngot_database
+
+4. **Import dữ liệu:**
+
+-   Chọn database ngot_database
+-   Chọn Import → chọn file:
+
+    ```
+    assets/database/ngot_database.sql
+    ```
+
+5. **Chạy dự án trên trình duyệt:**
