@@ -1,0 +1,332 @@
+html{
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+    scroll-padding-top: 80px;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    overflow-y: scroll;
+}
+
+body::-webkit-scrollbar {
+    width: 0;
+}
+
+/*
+    Start header
+*/
+
+#header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 80px;
+    box-shadow: 0 0 10px #000;
+    padding: 0 2rem;
+    align-items: center;
+    color: #ccc;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background-color: #fff;
+}
+
+#nav li {
+    float: left;
+    list-style-type: none;
+    padding: 5px 18px;
+}
+
+#nav li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 28px;
+    font-weight: 300;
+    text-transform: uppercase;
+    opacity: 0.7;
+    position: relative;
+}
+
+#nav li a::after {
+    content: "";
+    height: 3px;
+    width: 100%;
+    background-color: #f00;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+}
+
+#nav li a:hover::after {
+    transform: scaleX(1);
+    opacity: 1;
+}
+
+#header .absolute-center {
+    position: absolute;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%) translateY(-50%);
+    line-height: 0;
+}
+
+#header .absolute-center .header-logo {
+    width: 200px;
+}
+
+#social-list a:hover {
+    background: #dbdbdb;
+    border-radius: 30px;
+}
+
+#social-list a {
+    padding: 5px 10px;
+    font-size: 2rem;
+    color: #000;
+    margin-right: 10px;
+}
+
+
+#content {
+    margin-top: 80px;
+}
+
+#content .item {
+    position: relative;
+    scroll-snap-align: start;
+    scroll-snap-stop: normal;
+    height: calc(100vh - 80px);
+}
+
+#content .img1 {
+    background-image: linear-gradient(90deg, rgba(115, 115, 115, 0) 0%, #9B9B9B 59%, #9B9B9B 100%), url(../img/album_album/ngot.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+#content .img2 {
+    background-image: linear-gradient(90deg, #FEF0EC 0%, #FEF0EC 42%, rgba(115, 115, 115, 0) 100%), url(../img/album_album/ngbthg.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+#content .img3 {
+    background-image: linear-gradient(90deg, rgba(217, 217, 217, 0) 0%, #FF560C 62%, #FF560C 100%), url(../img/album_album/3.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+#content .img4 {
+    background-image: linear-gradient(90deg, #FF8900 0%, #FF8900 41%, rgba(115, 115, 115, 0) 100%), url(../img/album_album/gieo.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+#content .img5 {
+    background-image: linear-gradient(to right, rgba(255, 0, 0, 0) 0%, rgba(255, 0, 0, 0.5) 50%, rgba(255, 0, 0, 1) 100%), url(../img/album_album/suyt.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#content .img6 {
+    background-image: linear-gradient(90deg, #FC6533 0%, #FC6533 41%, rgba(115, 115, 115, 0) 100%), url(../img/album_album/caidautien.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+#content .img7 {
+    background-image: linear-gradient(90deg, rgba(217, 217, 217, 0) 0%, #CACFD9 62%, #CACFD9 100%), url(../img/album_album/giaytrang.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+#content .title-l,
+#content .title-r {
+    color: black;
+    font-size: 8rem;
+    font-family: Inter;
+    font-style: italic;
+    font-weight: 900;
+    word-wrap: break-word
+}
+
+#content .text-r,
+#content .text-l {
+    color: black;
+    font-size: 1rem;
+    font-family: Inter;
+    font-weight: 400;
+    word-wrap: break-word
+}
+
+#content .title-r {
+    position: absolute;
+    left: 55%;
+}
+
+#content .text-r {
+    position: absolute;
+    top: 30%;
+    left: 60%;
+}
+
+#content .title-l {
+    position: absolute;
+    left: 5%;
+}
+
+#content .text-l {
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    right: 50%;
+}
+
+#footer {
+    height: 400px;
+    background-color: #000000;
+    /* position: fixed; */
+    bottom: -3px;
+    left: 0;
+    right: 0;
+    padding: 40px;
+    position: relative;
+    scroll-snap-align: start;
+    scroll-snap-stop: normal;
+    /* z-index: 1; */
+}
+
+.footer__heading {
+    display: flex;
+    justify-content: space-between;
+    font-size: 25px;
+    font-style: italic;
+    color: #fff;
+    font-weight: 500;
+    margin: 0 120px 0 100px;
+    
+}
+
+
+.footer__body {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer__body-disciption {
+    color: #999;
+    margin-top: 10px;
+    list-style-type: none;
+    line-height: 1.6;
+}
+
+.footer__body-disciption li a{
+    color: #999;
+    text-decoration: none;
+}
+
+.footer__body-disciption--img {
+    margin-top: 10px;
+    height: 2.8125rem;
+    width: 7.5rem
+}
+
+.footer__body-subscribe {
+    margin-top: 20px;
+}
+
+.footer__body-subscribe-input {
+    /* width: 100%; */
+    font-size: 18px;
+    padding: 10px 10px;
+    border-radius: 5px;
+    border: 0;
+    outline: none;
+}
+
+.footer__body-subscribe-btn {
+    margin-top: 20px;
+    padding: 12px 20px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 5px;
+    justify-content: center;
+}
+
+.footer__special {
+    margin-top: 8px;
+}
+
+.footer__special-list {
+    display: flex;
+    justify-content: center ;
+    
+}
+
+.footer__special-list a:hover {
+    opacity: 0.8;
+}
+
+.footer__special-list a {
+    color: #fff;
+    margin: 0 15px;
+    font-size: 25px;
+}
+
+.footer__special--dicrip {
+    margin-top: 10px ;
+}
+
+.footer__special-title {
+    color: #999;
+    font-style: italic;
+    display: flex;
+    justify-content: center ;
+}
+
+.footer__special-title a{
+    color: #fff;
+}
+
+
+.footer__special--label {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-top: 20px;
+    
+}
+
+
+.footer__special--label li {
+    color: #999;
+    margin-right: 20px;
+    font-style: italic;
+    font-weight: 500;
+
+}
+.footer__title-dir {
+    margin-top: 20px;
+    color: #999;
+    font-style: italic;
+    text-align: center;
+}
+
+.footer__body li a:hover ,
+.footer__special--dicrip li a:hover
+{
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+}

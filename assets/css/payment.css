@@ -1,0 +1,169 @@
+    body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+}
+
+
+.header {
+    height: 80px;
+    /* position: relative; */
+    background-color: #fff;
+
+}
+
+.header__logo {
+    position: absolute;
+    left: 50%;
+    top: 5%;
+    /* left: 50%; */
+    transform: translate(-50%) translateY(-50%); 
+    line-height: 0;
+    
+}
+
+.header__logo--photograp {
+    width: 200px;
+}
+
+.checkout-container {
+    display: flex;
+    max-width: 1200px;
+    margin: 50px auto;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.left-column, .right-column {
+    padding: 20px;
+}
+
+.left-column {
+    flex: 2;
+}
+
+.right-column {
+    flex: 1;
+    border-left: 1px solid #ccc;
+}
+
+h1, h2, h3 {
+    margin-top: 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+}
+
+input, select, button {
+    margin-top: 5px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* button {
+    background-color: #000000;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #4cae4c;
+} */
+
+
+button {
+	overflow: visible;
+    padding: 12px 24px;
+    border-radius: 7px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+button span {
+	position: relative;
+	transition: color 0.6s cubic-bezier(0.53, 0.21, 0, 1);
+}
+
+button:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: hsl(0, 0%, 100%);
+	transform: scaleX(0);
+	transform-origin: 100% 100%;
+	transition: transform 0.6s cubic-bezier(0.53, 0.21, 0, 1);
+    border-radius: 7px;
+}
+
+button:hover::before {
+	transform-origin: 0 0;
+	transform: scaleX(1);
+}
+
+button:hover span {
+	color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 16px;
+}
+
+
+.delivery-option {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.delivery-option input {
+    margin-right: 10px;
+}
+
+.address-fields {
+    display: flex;
+    flex-direction: column;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.cart-item img {
+    max-width: 50px;
+    margin-right: 10px;
+}
+
+.cart-item p {
+    flex: 1;
+}
+
+.cart-item span {
+    white-space: nowrap;
+}
+
