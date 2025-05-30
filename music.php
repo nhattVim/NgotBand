@@ -36,7 +36,7 @@ if (isset($_POST['add_song'])) {
             $time = $row['time'];
             $poster = $row['poster'];
             $file = $row['file'];
-            $lyrics = $row['lyrics'];
+            $lyrics = mysqli_real_escape_string($conn, $row['lyrics']);
 
             $sql_insert = "INSERT INTO song (id_song, name_song, author, time, poster, file, lyrics, id_album) VALUES ('$id_song', '$name_song', '$author', '$time', '$poster', '$file', '$lyrics', '1')";
 
