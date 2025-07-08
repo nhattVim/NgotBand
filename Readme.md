@@ -10,7 +10,7 @@
 
 <br />
 
-<p align="center"><em>Built with the tools and technologies:</em></p>
+<p align="center"><em>Built with the following tools and technologies:</em></p>
 
 <p align="center">
   <img src="https://img.shields.io/badge/-Markdown-black?logo=markdown" />
@@ -19,29 +19,30 @@
 
 ---
 
-# Table of Content
+# Table of Contents
 
--   [Table of Content](#table-of-content)
-    -   [🌐 Trang web](#-trang-web)
-    -   [👥 Thành viên](#-thành-viên)
-    -   [🖼️ Screenshots](#️-screenshots)
-    -   [💻 Hướng dẫn cài đặt (Local với XAMPP)](#-hướng-dẫn-cài-đặt-local-với-xampp)
-
----
-
-## 🌐 Trang web
-
-Đây là phiên bản web giúp người dùng trải nghiệm hành trình âm nhạc với hệ thống mua sắm liền mạch: [ngotband.fwh.is](https://ngotband.fwh.is)
+- [Table of Contents](#table-of-contents)
+  - [🌐 Website](#-website)
+  - [👥 Team Members](#-team-members)
+  - [🖼️ Screenshots](#️-screenshots)
+  - [💻 Installation Guide (Local with XAMPP)](#-installation-guide-local-with-xampp)
 
 ---
 
-## 👥 Thành viên
+## 🌐 Website
 
--   **Huỳnh Ngọc Lâm** - (leader)
--   **Lưu Minh Chí**
--   **Lê Nhật Trường**
--   **Trần Thị Ngọc Mai**
--   **Trần Phi Hùng (80)**
+This is the web version that allows users to enjoy their musical journey through a seamless shopping experience:  
+👉 [ngotband.fwh.is](https://ngotband.fwh.is)
+
+---
+
+## 👥 Team Members
+
+- **Huỳnh Ngọc Lâm** – (Team Leader)  
+- **Lưu Minh Chí**  
+- **Lê Nhật Trường**  
+- **Trần Thị Ngọc Mai**  
+- **Trần Phi Hùng (80)**
 
 ---
 
@@ -61,7 +62,7 @@
             <td><img src="https://github.com/nhattVim/assets/blob/master/NgotBand/5.png?raw=true"/></td>
         </tr>
     </table>
-        <table>
+    <table>
         <tr>
             <td><img src="https://github.com/nhattVim/assets/blob/master/NgotBand/6.png?raw=true"/></td>
             <td><img src="https://github.com/nhattVim/assets/blob/master/NgotBand/7.png?raw=true"/></td>
@@ -71,32 +72,31 @@
 
 ---
 
-## 💻 Hướng dẫn cài đặt (Local với XAMPP)
+## 💻 Installation Guide (Local with XAMPP)
 
-1. **Tải XAMPP và cài đặt:**
-   [https://www.apachefriends.org/index.html](https://www.apachefriends.org/index.html)
+1. **Download and install XAMPP:** [https://www.apachefriends.org/index.html](https://www.apachefriends.org/index.html)
 
-2. **Di chuyển mã nguồn vào thư mục `htdocs`:**
+2. **Move the source code into the `htdocs` directory:**
 
     ```bash
     C:\xampp\htdocs\NgotBand
     ```
 
-3. **Tạo cơ sở dữ liệu:**
+3. **Create the database:**
 
--   Truy cập http://localhost/phpmyadmin
--   Tạo database mới tên ngot_database
+- Visit [http://localhost/phpmyadmin](http://localhost/phpmyadmin)  
+- Create a new database named `ngot_database`
 
-4. **Import dữ liệu:**
+4. **Import the database:**
 
--   Chọn database ngot_database
--   Chọn Import → chọn file:
+- Select the `ngot_database` database  
+- Go to **Import** → choose the file:
 
     ```
     assets/database/ngot_database.sql
     ```
 
-5.  **Chạy dự án trên trình duyệt:**
+5. **Run the project in your browser:**
 
     ```
     http://localhost/NgotBand/
